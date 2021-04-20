@@ -9,10 +9,13 @@ import Foundation
 import UIKit
 
 class SecondView : UIViewController{
+    var paramText: String = ""
+    @IBOutlet weak var getText: UILabel!
     override func viewDidLoad() {
         NSLog("SecondVC viewDidLoad");
 
         super.viewDidLoad()
+        self.getText.text = paramText
         // Do any additional setup after loading the view.
     }
     

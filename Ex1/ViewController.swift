@@ -18,11 +18,14 @@ class ViewController: UIViewController {
     @IBAction func mvSecond(_ sender: Any) {
         NSLog("mvSecond call");
 //        let storyboard: UIStoryboard? = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let uvc = self.storyboard?.instantiateViewController(withIdentifier: "SecondVC")
-                
-        uvc?.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+        if let uvc = self.storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SecondView{
+            
+            uvc.modalPresentationStyle = UIModalPresentationStyle.fullScreen
 //        uvc?.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-        self.present(uvc!, animated: true)
+            uvc.paramText = "기본 텍스트"
+            self.present(uvc, animated: true)
+        }
+                
         //test
     }
     

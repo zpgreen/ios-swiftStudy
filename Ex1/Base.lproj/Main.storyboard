@@ -96,11 +96,19 @@
                                     <action selector="PopPreView:" destination="BHN-we-8ba" eventType="touchUpInside" id="2f5-xa-581"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2W-5C-yP0">
+                                <rect key="frame" x="94" y="254" width="210" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ghe-7j-oAX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="getText" destination="E2W-5C-yP0" id="SKt-cw-zb9"/>
                         <outlet property="view" destination="yvP-eO-ef1" id="zhV-g4-8b6"/>
                     </connections>
                 </viewController>
