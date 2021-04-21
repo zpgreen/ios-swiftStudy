@@ -15,6 +15,7 @@
 		314159B8261EA399009999DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 314159B6261EA399009999DF /* LaunchScreen.storyboard */; };
 		314159C5261EBBC5009999DF /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314159C4261EBBC5009999DF /* SecondView.swift */; };
 		314159CB261EE499009999DF /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314159CA261EE499009999DF /* ThirdView.swift */; };
+		31993895262FCC11000CB1A0 /* FourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31993894262FCC11000CB1A0 /* FourView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		314159B9261EA399009999DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		314159C4261EBBC5009999DF /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		314159CA261EE499009999DF /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
+		31993894262FCC11000CB1A0 /* FourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				314159AB261EA396009999DF /* AppDelegate.swift */,
 				314159AD261EA396009999DF /* SceneDelegate.swift */,
 				314159AF261EA396009999DF /* ViewController.swift */,
+				31993894262FCC11000CB1A0 /* FourView.swift */,
 				314159B1261EA396009999DF /* Main.storyboard */,
 				314159CA261EE499009999DF /* ThirdView.swift */,
 				314159C4261EBBC5009999DF /* SecondView.swift */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31993895262FCC11000CB1A0 /* FourView.swift in Sources */,
 				314159B0261EA396009999DF /* ViewController.swift in Sources */,
 				314159CB261EE499009999DF /* ThirdView.swift in Sources */,
 				314159AC261EA396009999DF /* AppDelegate.swift in Sources */,

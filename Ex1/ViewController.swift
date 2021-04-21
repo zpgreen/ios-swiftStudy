@@ -7,14 +7,30 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,MyProtocol{
 
+    @IBOutlet weak var lbName: UILabel!
     override func viewDidLoad() {
         NSLog("FirstVC viewDidLoad");
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func FourAction(_ sender: Any) {
+        guard let uvc = storyboard?.instantiateViewController(withIdentifier: "FourVC") as? FourView else {
+            return
+        }
+        uvc.delegate = self
+        self.navigationController?.pushViewController(uvc, animated: true)
+    }
+
+        func protocolData(dataSent: String) {
+            lbName.text = dataSent
+        }
+  
+    
+    
+    
     @IBAction func mvSecond(_ sender: Any) {
         NSLog("mvSecond call");
 //        let storyboard: UIStoryboard? = UIStoryboard(name: "Main", bundle: Bundle.main)
